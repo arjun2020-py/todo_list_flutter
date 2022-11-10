@@ -1,0 +1,1 @@
+import 'view/splash_page.dart';
