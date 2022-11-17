@@ -69,116 +69,116 @@ class ProfileScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15.0),
-              child: Card(
-                child: ListTile(
-                  leading: const Text('My Task'),
-                  trailing: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15.0),
-              child: Card(
-                child: ListTile(
-                  leading: const Text('Task Done'),
-                  trailing: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15.0),
-              child: Card(
-                child: ListTile(
-                  leading: const Text('Pending Task'),
-                  trailing: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15.0),
-              child: Card(
-                child: ListTile(
-                  leading: const Text('Address'),
-                  trailing: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15.0),
-              child: Card(
-                child: ListTile(
-                  leading: const Text('Notifcation'),
-                  trailing: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 15.0),
-              child: Card(
-                child: ListTile(
-                  leading: const Text('About Us'),
-                  trailing: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.arrow_forward_ios,
-                      color: Colors.black,
-                    ),
-                  ),
-                ),
-              ),
-            ),
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 15),
-              child: Divider(
-                color: Colors.black54,
-              ),
-            ),
-            SizedBox(
-              width: MediaQuery.of(context).size.width - 30,
-              child: ElevatedButton(
-                onPressed: () {},
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.white,
-                  side: const BorderSide(color: Colors.black, width: 3),
-                ),
-                child: const Text(
-                  'Logout',
-                  style: TextStyle(color: Colors.black),
-                ),
-              ),
-            )
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            //   child: Card(
+            //     child: ListTile(
+            //       leading: const Text('My Task'),
+            //       trailing: IconButton(
+            //         onPressed: () {},
+            //         icon: const Icon(
+            //           Icons.arrow_forward_ios,
+            //           color: Colors.black,
+            //         ),
+            //       ),
+            //     ),
+            //   ),
+            // ),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            //   child: Card(
+            //     child: ListTile(
+            //       leading: const Text('Task Done'),
+            //       trailing: IconButton(
+            //         onPressed: () {},
+            //         icon: const Icon(
+            //           Icons.arrow_forward_ios,
+            //           color: Colors.black,
+            //         ),
+            //       ),
+            //     ),
+            //   ),
+            // ),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            //   child: Card(
+            //     child: ListTile(
+            //       leading: const Text('Pending Task'),
+            //       trailing: IconButton(
+            //         onPressed: () {},
+            //         icon: const Icon(
+            //           Icons.arrow_forward_ios,
+            //           color: Colors.black,
+            //         ),
+            //       ),
+            //     ),
+            //   ),
+            // ),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            //   child: Card(
+            //     child: ListTile(
+            //       leading: const Text('Address'),
+            //       trailing: IconButton(
+            //         onPressed: () {},
+            //         icon: const Icon(
+            //           Icons.arrow_forward_ios,
+            //           color: Colors.black,
+            //         ),
+            //       ),
+            //     ),
+            //   ),
+            // ),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            //   child: Card(
+            //     child: ListTile(
+            //       leading: const Text('Notifcation'),
+            //       trailing: IconButton(
+            //         onPressed: () {},
+            //         icon: const Icon(
+            //           Icons.arrow_forward_ios,
+            //           color: Colors.black,
+            //         ),
+            //       ),
+            //     ),
+            //   ),
+            // ),
+            // Padding(
+            //   padding: const EdgeInsets.symmetric(horizontal: 15.0),
+            //   child: Card(
+            //     child: ListTile(
+            //       leading: const Text('About Us'),
+            //       trailing: IconButton(
+            //         onPressed: () {},
+            //         icon: const Icon(
+            //           Icons.arrow_forward_ios,
+            //           color: Colors.black,
+            //         ),
+            //       ),
+            //     ),
+            //   ),
+            // ),
+            // const Padding(
+            //   padding: EdgeInsets.symmetric(horizontal: 15),
+            //   child: Divider(
+            //     color: Colors.black54,
+            //   ),
+            // ),
+            // SizedBox(
+            //   width: MediaQuery.of(context).size.width - 30,
+            //   child: ElevatedButton(
+            //     onPressed: () {},
+            //     style: ElevatedButton.styleFrom(
+            //       primary: Colors.white,
+            //       side: const BorderSide(color: Colors.black, width: 3),
+            //     ),
+            //     child: const Text(
+            //       'Logout',
+            //       style: TextStyle(color: Colors.black),
+            //     ),
+            //   ),
+            // )
           ],
         ),
       ),
