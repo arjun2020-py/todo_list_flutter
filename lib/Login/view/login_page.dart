@@ -180,7 +180,7 @@ class _LoginPageState extends State<LoginPage> {
                       Expanded(
                         child: Container(
                           margin:
-                              const EdgeInsets.only(left: 20.0, right: 10.0),
+                              const EdgeInsets.only(left: 20.0, right: 10),
                           child: const Divider(
                             color: Colors.black,
                             thickness: 1,

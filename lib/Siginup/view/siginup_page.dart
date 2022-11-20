@@ -73,10 +73,7 @@ class _SiginupPageState extends State<SiginupPage> {
                       fillColor: Colors.white,
                     ),
                     validator: (value) {
-                      if (value!.isEmpty ||
-                          !RegExp(r'^[A-Za-z][A-Za-z0-9_]{7,29}$')
-                              .hasMatch(value) ||
-                          value.length <= 4) {
+                      if (value!.isEmpty || value.length <= 4) {
                         return 'Please enter your name';
                       }
                       return null;

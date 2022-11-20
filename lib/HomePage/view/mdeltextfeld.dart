@@ -70,6 +70,7 @@ class ModelTextfield extends StatelessWidget {
                     name: todoNameController.text,
                     decrption: todoDecrptionController.text,
                   );
+                  Navigator.pop(context);
                 },
                 child: const Text('Save'),
               ),
@@ -90,7 +91,6 @@ class ModelTextfield extends StatelessWidget {
     final userId = auth.currentUser!.uid;
     var uuid = const Uuid(); //3
     var todoId = uuid.v4(); //4
-    final date = DateFormat.yMd().add_jm();
     try {
       await todoRef.doc(todoId).set({
         //5
@@ -98,7 +98,6 @@ class ModelTextfield extends StatelessWidget {
         'Decrption': decrption,
         "userid": userId,
         "todoId": todoId,
-        "date": date,
       });
     } catch (e) {}
   }
