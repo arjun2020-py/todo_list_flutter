@@ -48,11 +48,27 @@ class HomePage extends StatelessWidget {
               itemBuilder: (BuildContext context, int index) {
                 return ListTile(
                   title: Text(todoItems[index]['todoName'].toString()),
-                  subtitle: Text(todoItems[index]['todoName'].toString()),
+                  subtitle: Text(todoItems[index]['Decrption'].toString()),
                   trailing: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      IconButton(onPressed: () {}, icon: Icon(Icons.edit)),
+                      IconButton(
+                          onPressed: () {
+                            showModalBottomSheet(
+                              isScrollControlled: true, //1
+                              context: context,
+                              builder: (context) {
+                                return ModelTextfield(
+                                  buttonType: false,
+                                  name: todoItems[index]['todoName'].toString(),
+                                  desc:
+                                      todoItems[index]['Decrption'].toString(),
+                                  Id: todoItems[index]['todoId'].toString(),
+                                );
+                              },
+                            );
+                          },
+                          icon: Icon(Icons.edit)),
                       IconButton(onPressed: () {}, icon: Icon(Icons.delete))
                     ],
                   ),
@@ -73,7 +89,11 @@ class HomePage extends StatelessWidget {
             isScrollControlled: true, //1
             context: context,
             builder: (context) {
-              return ModelTextfield();
+              return ModelTextfield(
+                buttonType: true,
+                desc: '',
+                name: '',
+              );
             },
           );
         },
