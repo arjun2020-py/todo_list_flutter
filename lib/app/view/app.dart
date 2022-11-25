@@ -34,7 +34,7 @@ class App extends StatelessWidget {
         // 'Siginup':(context) => SiginupPage(),
         'Home': (context) => HomePage(),
         'Siginup': (context) => SiginupPage(),
-        'profile': (context) => const ProfileScreen()
+        'profile': (context) => ProfileScreen()
       },
     );
   }
