@@ -30,10 +30,10 @@ class ModelTextfield extends StatelessWidget {
         child: Column(
           children: [
             Padding(
-              padding: EdgeInsets.only(right: 280),
+              padding: const EdgeInsets.only(right: 280),
               child: Text(
                 (buttonType) ? 'Add Todo' : 'Update todo',
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                 ),
