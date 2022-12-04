@@ -14,7 +14,7 @@ class SiginupPage extends StatefulWidget {
 }
 
 class _SiginupPageState extends State<SiginupPage> {
-  TextEditingController emailController = TextEditingController(),
+ final TextEditingController emailController = TextEditingController(),
       passwrodController = TextEditingController(),
       usernameController = TextEditingController(),
       mobilenoController = TextEditingController();
@@ -40,9 +40,10 @@ class _SiginupPageState extends State<SiginupPage> {
       child: BlocListener<RegisterBloc, RegisterState>(
         listener: (context, state) {
           if (state is SignUpSuccess) {
+            // ignore: inference_failure_on_instance_creation
             Navigator.of(context).push(MaterialPageRoute(
               builder: (context) => LoginPage(),
-            ));
+            ),);
           } else if (state is SignupFailed) {
             ScaffoldMessenger.of(context)
                 .showSnackBar(SnackBar(content: Text(state.errMessage)));
@@ -60,8 +61,8 @@ class _SiginupPageState extends State<SiginupPage> {
                       const SizedBox(
                         height: 70,
                       ),
-                      Lottie.asset("assets/images/107800-login-leady.json",
-                          height: 250),
+                      Lottie.asset('assets/images/107800-login-leady.json',
+                          height: 250,),
                       const SizedBox(
                         height: 40,
                       ),
@@ -70,7 +71,7 @@ class _SiginupPageState extends State<SiginupPage> {
                         style: TextStyle(
                             color: Color(0xff0097a7),
                             fontSize: 25,
-                            fontWeight: FontWeight.bold),
+                            fontWeight: FontWeight.bold,),
                       )
                     ],
                   ),
@@ -83,7 +84,7 @@ class _SiginupPageState extends State<SiginupPage> {
                         controller: usernameController,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10)),
+                              borderRadius: BorderRadius.circular(10),),
                           // ignore: prefer_single_quotes
                           hintText: "Username",
                           filled: true,
@@ -103,7 +104,7 @@ class _SiginupPageState extends State<SiginupPage> {
                         controller: emailController,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10)),
+                              borderRadius: BorderRadius.circular(10),),
                           // ignore: prefer_single_quotes
                           hintText: "EmailId",
                           filled: true,
@@ -125,7 +126,7 @@ class _SiginupPageState extends State<SiginupPage> {
                         controller: mobilenoController,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10)),
+                              borderRadius: BorderRadius.circular(10,),),
                           // ignore: prefer_single_quotes
                           hintText: "MobileNo",
                           filled: true,
@@ -137,6 +138,7 @@ class _SiginupPageState extends State<SiginupPage> {
                                   .hasMatch(value)) {
                             return 'Please enter vaild mobile number';
                           }
+                          return null;
                         },
                       ),
                       const SizedBox(
@@ -147,7 +149,7 @@ class _SiginupPageState extends State<SiginupPage> {
                         obscureText: true,
                         decoration: InputDecoration(
                           border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(10)),
+                              borderRadius: BorderRadius.circular(10,),),
                           // ignore: prefer_single_quotes
                           hintText: "Passwrod",
                           filled: true,
